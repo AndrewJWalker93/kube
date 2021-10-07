@@ -11,7 +11,7 @@ spec:
   tls:
   - hosts:
     - test.banterdo.me
-    secretName: ui-fpl-tls
+    secretName: bd-ui-tls
   rules:
   - host: test.banterdo.me
     http:
