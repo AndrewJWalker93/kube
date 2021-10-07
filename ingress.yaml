@@ -10,7 +10,7 @@ spec:
   tls:
   - hosts:
     - test.banterdo.me
-    secretName: ui-tls
+    secretName: letsencrypt-prod
   rules:
   - host: test.banterdo.me
     http:
