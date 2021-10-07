@@ -265,6 +265,7 @@ metadata:
   annotations:
     load-balancer.hetzner.cloud/location: nbg1
     load-balancer.hetzner.cloud/use-private-ip: "true"
+    load-balancer.hetzner.cloud/uses-proxyprotocol: "true"
   labels:
     helm.sh/chart: ingress-nginx-4.0.4
     app.kubernetes.io/name: ingress-nginx
