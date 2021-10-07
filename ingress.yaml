@@ -1,7 +1,10 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-fpl-ui
+  name: ingress-myservicea
+  annotations:
+    # use the shared ingress-nginx
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
   - host: test.banterdo.me
@@ -12,6 +15,5 @@ spec:
         backend:
           service:
             name: my-service
-            port: 
+            port:
               number: 80
-  ingressClassName: nginx
