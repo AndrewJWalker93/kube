@@ -5,12 +5,12 @@ metadata:
   annotations:
     # use the shared ingress-nginx
     kubernetes.io/ingress.class: "nginx"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
 spec:
   tls:
   - hosts:
     - test.banterdo.me
-    secretName: letsencrypt-prod
+    secretName: echo-tls
   rules:
   - host: test.banterdo.me
     http:
