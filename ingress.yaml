@@ -3,11 +3,17 @@ kind: Ingress
 metadata:
   name: ingress-fpl-ui
   annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+  annotations:
     # use the shared ingress-nginx
     kubernetes.io/ingress.class: "nginx"
 spec:
+  tls:
+  - hosts:
+    - k8s.banterdo.me
+    secretName: cf-fpl-tls
   rules:
-  - host: k8.banterdo.me
+  - host: k8s.banterdo.me
     http:
       paths:
       - path: /
