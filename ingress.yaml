@@ -11,9 +11,20 @@ spec:
   tls:
   - hosts:
     - banterdo.me
+    - www.banterdo.me
     secretName: cf-fpl-tls
   rules:
   - host: banterdo.me
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: fpl-ui-service
+            port:
+              number: 80
+  - host: www.banterdo.me
     http:
       paths:
       - path: /
