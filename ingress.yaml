@@ -13,6 +13,7 @@ spec:
     - banterdo.me
     - www.banterdo.me
     - api.banterdo.me
+    - authentication.banterdo.me
     secretName: cf-fpl-tls
   rules:
   - host: banterdo.me
@@ -43,5 +44,15 @@ spec:
         backend:
           service:
             name: fpl-api-prod-service
+            port:
+              number: 80
+  - host: authentication.banterdo.me
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: banterdome-auth-api-service
             port:
               number: 80
