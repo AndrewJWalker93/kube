@@ -1,0 +1,11 @@
+[
+  {"playerName": "Ronaldo",
+   "playerId": 1,
+   "subscriptionTypes": [
+     "goal"] 
+  },
+  {"playerName": "Jesus",
+   "playerId": 2,
+   "subscriptionTypes": []
+  }
+ ]
