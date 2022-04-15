@@ -54,6 +54,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: banterdome-fpl-application
+            name: banterdome-fpl-application-service
             port:
               number: 80
