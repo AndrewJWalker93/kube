@@ -14,6 +14,7 @@ spec:
     - www.banterdo.me
     - api.banterdo.me
     - authentication.banterdo.me
+    - a.banterdo.me
     secretName: cf-fpl-tls
   rules:
   - host: banterdo.me
