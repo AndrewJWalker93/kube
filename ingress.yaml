@@ -46,13 +46,13 @@ spec:
             name: fpl-api-prod-service
             port:
               number: 80
-  - host: authentication.banterdo.me
+  - host: a.banterdo.me
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: banterdome-auth-api-service
+            name: banterdome-fpl-application
             port:
               number: 80
