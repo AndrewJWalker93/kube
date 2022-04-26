@@ -57,3 +57,13 @@ spec:
             name: banterdome-fpl-application-service
             port:
               number: 80
+  - host: finternational.org
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: finternational-ui-service
+            port:
+              number: 80           
