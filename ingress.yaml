@@ -57,7 +57,7 @@ spec:
             name: banterdome-fpl-application-service
             port:
               number: 80
-  - host: finternational.org
+  - host: finternation.al
     http:
       paths:
       - path: /
