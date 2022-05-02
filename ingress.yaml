@@ -78,7 +78,7 @@ spec:
             port:
               number: 80
                
-  - host: fantasy-api-test.finternation.al
+  - host: fantasy-api-test.finternation.org
     http:
       paths:
       - path: /
