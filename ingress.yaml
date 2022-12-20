@@ -67,6 +67,16 @@ spec:
             name: finternational-ui-service
             port:
               number: 80
+  - host: test.finternation.al
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: finternational-ui-service
+            port:
+              number: 80
   - host: fantasy-api.finternational.org
     http:
       paths:
